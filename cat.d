@@ -1,9 +1,9 @@
-import std.stdio;
+import std.stdio : stdin, write;
 
 void
 main(string[] args)
 {
-    foreach (string line; stdin.lines) {
+    foreach (line; stdin.byLine) {
         write(line);
     }
 }
