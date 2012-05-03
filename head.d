@@ -1,10 +1,10 @@
 import std.stdio : stdin, lines, write;
-import std.conv : parse;
+import std.conv : to;
 
 void
 main(string[] args)
 {
-    auto n = parse!uint(args[1]);
+    auto n = to!uint(args[1]);
     if (n == 0) return;
     foreach (string line; stdin.lines) {
         write(line);
